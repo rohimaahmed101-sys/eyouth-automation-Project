@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="EYouth Automation Suite" verbose="1" parallel="false">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="EYouth Full Test Run">
+        <classes>
+            <class name="com.eyouth.tests.SearchTest"/>
+            <class name="com.eyouth.tests.CourseTest"/>
+            <class name="com.eyouth.tests.RegistrationTest"/>
+            <class name="com.eyouth.tests.LoginTest"/>
+            <class name="com.eyouth.tests.EndToEndTest"/>
+            <class name="com.eyouth.tests.SocialLinksTest"/>
+            <class name="com.eyouth.tests.CourseCardUITest"/>
+        </classes>
+    </test>
+
+</suite>
